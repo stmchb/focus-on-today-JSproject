@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(225, 229, 233);
+  font-family: "Poppins", sans-serif;
+}
+main {
+  margin: 16px;
+}
+
+.title {
+  font-size: 64px;
+  color: #48a300;
+  text-align: center;
+}
+
+h1 > span {
+  color: blue;
+}
+
+.app-conatainer {
+  height: 800px;
+  background-color: #fbfbfb;
+  margin-inline: auto;
+  max-width: 660px;
+  border-radius: 15px;
+  padding: 32px 48px;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.sun-img {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.desc-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #858585;
+  margin-bottom: 18px;
+}
+
+.progress-bar {
+  height: 30px;
+  border-radius: 15px;
+  background: #48a3001a;
+}
+
+.progress-value {
+  font-size: 10px;
+  background: #48a300;
+  border-radius: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #eeffe0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.error-label {
+  color: #ff5151;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 6px;
+  display: none;
+}
+
+.goal-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 82px;
+  background-color: #ffffff;
+  border-radius: 17px;
+  border: 1px solid #0000001a;
+  margin-bottom: 46px;
+  margin-top: 43px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #61481c4d;
+  margin: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completed .checkbox {
+  background-color: #48a300;
+  border-color: #48a300;
+}
+
+.input-box {
+  width: 95%;
+  border: none;
+  height: 40px;
+  border-color: #d9d9d9;
+  outline: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-box::placeholder {
+  color: #d9d9d9;
+}
+
+.completed .input-box {
+  color: #48a300;
+  text-decoration-line: line-through;
+}
+
+.quotes {
+  font-family: inherit;
+  font-weight: 500;
+  text-align: center;
+}
+
+.made-with {
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 100px;
+  color: #858585;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .goal-container {
+    margin-bottom: 23px;
+  }
+  .goal-container {
+    height: 55px;
+  }
+  .made-with {
+    margin-top: 50px;
+  }
+  .progress-bar {
+    height: 20px;
+  }
+  .progress-value {
+    height: 20px;
+  }
+}
